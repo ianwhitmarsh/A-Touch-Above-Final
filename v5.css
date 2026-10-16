@@ -1,0 +1,56 @@
+/* ---- v5: every dark/gold box moves to the lavender + sage palette ---- */
+:root{
+  --lav-deep:#7f62bf; --lav-deeper:#5f4a9e;
+  --sage-deep:#557d58; --sage-mid:#8db58b;
+  --sage-glow:radial-gradient(520px 320px at 100% 100%,rgba(141,181,139,.55),transparent 70%);
+  --lav-glow:radial-gradient(520px 320px at 100% 100%,rgba(199,181,238,.45),transparent 70%);
+}
+
+/* home: feature cards */
+.fc-onc{background:radial-gradient(420px 300px at 100% 100%,rgba(168,198,163,.35),transparent 70%),linear-gradient(160deg,#9b7fd6 0%,var(--lav-deeper) 100%)}
+.fc-pemf{background:radial-gradient(420px 300px at 0% 0%,rgba(199,181,238,.35),transparent 70%),linear-gradient(160deg,var(--sage-mid) 0%,var(--sage-deep) 100%)}
+.feature-card .eyebrow{color:#e8f1e5}.feature-card .eyebrow::before{background:#e8f1e5}
+.fc-pemf .eyebrow{color:#fff}.fc-pemf .eyebrow::before{background:#fff}
+.feature-card p{opacity:.92}
+
+/* home: "Find your path" quiz */
+.quiz{background:var(--sage-glow),linear-gradient(135deg,var(--lav-deep) 0%,var(--lav-deeper) 100%)}
+.quiz .lead{color:rgba(255,255,255,.85)}
+.quiz .eyebrow{color:#e8f1e5!important}.quiz .eyebrow::before{background:#e8f1e5}
+.qopt{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}
+.qopt:hover{background:rgba(255,255,255,.22);border-color:#e8f1e5}
+.qbar{background:rgba(255,255,255,.22)}
+.qbar i{background:#c9e0c5}
+
+/* page banners ("Ready to…", "Not sure which to choose?") */
+.banner{background:var(--sage-glow),linear-gradient(135deg,var(--lav-deep) 0%,var(--lav-deeper) 100%)}
+.banner .eyebrow{color:#e8f1e5!important}.banner .eyebrow::before{background:#e8f1e5}
+.banner .script{color:#e8f1e5}
+.banner p{opacity:.92}
+
+/* oncology "The Goal" box + functional-medicine compare card: sage */
+.goal{background:var(--lav-glow),linear-gradient(135deg,var(--sage-mid) 0%,var(--sage-deep) 100%)}
+.compare .b{background:var(--lav-glow),linear-gradient(135deg,var(--sage-mid) 0%,var(--sage-deep) 100%)}
+.compare .b .checks li::before{border-color:#fff}
+
+/* contact section + bottom legal bar */
+.contact{background:var(--sage-glow),linear-gradient(160deg,var(--lav-deep) 0%,var(--lav-deeper) 100%)}
+.contact .eyebrow{color:#e8f1e5!important}.contact .eyebrow::before{background:#e8f1e5}
+.hours{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
+.hours tr.today td{color:#d6ead2}
+.cinfo svg{color:#d6ead2}
+.legal{background:var(--lav-deeper)}
+.legal a:hover{color:#d6ead2}
+
+/* smaller accents that were still navy / gold */
+.tcard .cap{background:linear-gradient(180deg,transparent,rgba(79,55,132,.88))}
+.tcard .cap span{color:#d6ead2}
+.jstep.active{background:var(--lav-deep);border-color:var(--lav-deep)}
+.tile.active .ico,.coming .ico{background:var(--lav-deep);border-color:var(--lav-deep)}
+.tnode:hover,.tnode.active{background:var(--lav-deep)}
+.tab.active{background:var(--lav-deep);border-color:var(--lav-deep)}
+.ring{border-color:rgba(127,165,127,.55)}
+.techwheel .core{background:radial-gradient(circle at 35% 30%,#fff,var(--gold-2));box-shadow:0 0 0 14px rgba(168,198,163,.22),0 0 0 30px rgba(168,198,163,.1)}
+.floatbtn{background:var(--sage-deep);box-shadow:0 14px 30px -10px rgba(85,125,88,.8)}
+.pagehero{background-image:radial-gradient(800px 460px at 50% 0%,rgba(199,181,238,.5),transparent 70%),radial-gradient(600px 400px at 100% 100%,rgba(168,198,163,.3),transparent 70%)}
+.subhero{background-image:radial-gradient(800px 500px at 50% 0%,rgba(199,181,238,.5),transparent 70%),radial-gradient(600px 400px at 100% 100%,rgba(168,198,163,.3),transparent 70%)}
