@@ -63,7 +63,7 @@ const page = document.body.dataset.page;
 if (!document.querySelector('link[href="v3.css"]')) { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'v3.css'; document.head.appendChild(l); }
 const WP = 'https://atouchabovehhc.com/wp-content/uploads/';
 const REVIEW = 'https://www.google.com/search?q=A+Touch+Above+Holistic+Health+Center+Reviews#lrd=0x87b6f1e60c02ef27:0xbe4514807a74a3a2,3,,,,';
-const LOGO = `<span class="hlogo"><img src="${WP}2025/09/A-Touch-Above-Horizontal-Logo-PNG-01-1024x576.png" alt="A Touch Above — Massage &amp; Holistic Health" width="1024" height="576" onerror="this.parentElement.outerHTML=MARK+'<span><b>A Touch Above</b><small>Holistic Health</small></span>'"></span>`;
+const LOGO = `<img class="brandlogo" src="img/logo-horizontal.png" alt="A Touch Above — Massage &amp; Holistic Health" width="453" height="104">`;
 const act = p => page===p ? 'active' : '';
 const chev = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>';
 const navEl = document.getElementById('nav');
@@ -93,7 +93,7 @@ if (footEl) footEl.outerHTML = `
  <div class="wrap ftop">
   <div class="fgrid">
     <div>
-      <a class="flogo" href="index.html"><img src="${WP}2025/09/cropped-A-Touch-Above-Logo-01-1-scaled-1-270x270.png" alt="A Touch Above Holistic Health logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="brand fallback">${MARK}<span><b>A Touch Above</b><small>Holistic Health</small></span></span></a>
+      <a class="flogo" href="index.html"><img src="img/logo.png" alt="A Touch Above Holistic Health logo" width="245" height="206" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="brand fallback">${MARK}<span><b>A Touch Above</b><small>Holistic Health</small></span></span></a>
       <p class="fabout">Pain, Prevention, Support &amp; Direction. Whole-person care for body, mind and spirit in Owasso &amp; Tulsa, Oklahoma.</p>
       <div class="social">
         <a href="https://www.facebook.com/people/ATA-Womens-Holistic-Wellness/100089424800062/" target="_blank" rel="noopener" aria-label="Follow us on Facebook">${icon('fb')}</a>
@@ -123,12 +123,11 @@ if (footEl) footEl.outerHTML = `
       </ul>
       <h5 style="margin-top:26px">Client Corner</h5>
       <ul>
-        <li><a href="${BOOK}" target="_blank" rel="noopener">Patient Portal</a></li>
+        <li><a href="https://my.ressahealth.com/" target="_blank" rel="noopener">Patient Portal</a></li>
         <li><a href="https://app.squareup.com/gift/JHPM2FRCNE1VS/order" target="_blank" rel="noopener">Gift Certificates</a></li>
         <li><a href="https://atouchabove.idlife.com" target="_blank" rel="noopener">Customized Supplements <span class="fsub">Take the assessment</span></a></li>
         <li><a href="https://us.fullscript.com/login" target="_blank" rel="noopener">Fullscript Supplements</a></li>
         <li><a href="index.html#resources">Resources</a></li>
-        <li class="fref">Virtual EMDR with Kristy Cannady<br><a href="tel:9252435695">925-243-5695</a></li>
       </ul>
     </div>
     <div>
