@@ -107,10 +107,10 @@ if (footEl) footEl.outerHTML = `
       <ul class="fhours">
         <li data-d="1"><b>Mon</b><span>9am – 5pm</span></li>
         <li data-d="2"><b>Tue</b><span>9am – 7pm</span></li>
-        <li data-d="3"><b>Wed</b><span>Closed</span></li>
+        <li data-d="3"><b>Wed</b><span>9am – 2pm</span></li>
         <li data-d="4"><b>Thu</b><span>9am – 7pm</span></li>
         <li data-d="5"><b>Fri</b><span>9am – 4pm</span></li>
-        <li data-d="6"><b>Sat</b><span>10am – 4pm</span></li>
+        <li data-d="6"><b>Sat</b><span>11am – 4pm</span></li>
         <li data-d="0"><b>Sun</b><span>Closed</span></li>
       </ul>
     </div>
@@ -177,7 +177,7 @@ const cio = new IntersectionObserver(es => es.forEach(e => {
 document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
 
 // hours + open status (Central Time)
-const HOURS = [null,[9,17],[9,19],null,[9,19],[9,16],[10,16]]; // Sun..Sat
+const HOURS = [null,[9,17],[9,19],[9,14],[9,19],[9,16],[11,16]]; // Sun..Sat
 const ct = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Chicago'}));
 const today = ct.getDay(), hr = ct.getHours() + ct.getMinutes()/60, h = HOURS[today];
 const fmt = n => (n>12?n-12:n) + (n>=12?'pm':'am');
